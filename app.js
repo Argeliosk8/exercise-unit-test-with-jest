@@ -5,7 +5,7 @@ let oneEuroIs = {
 }
 
 function fromEuroToDollar(euro){
-    const dollarResult = euro * 1.2
+    const dollarResult = parseFloat((euro * 1.2).toFixed(2))
     return dollarResult
 }
 
@@ -23,4 +23,4 @@ function fromYenToPound(yen){
 
 module.exports = {fromEuroToDollar, fromDollarToYen, fromYenToPound}
 
-console.log(fromYenToPound(1000))
+console.log(fromEuroToDollar(51))
